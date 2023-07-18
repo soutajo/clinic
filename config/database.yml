@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: clinic_development
+  pool: 5
+  username: dell
+  password: password
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: clinic_test
+  pool: 5
+  username: dell
+  password: password
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: clinic_production
+  pool: 5
+  username: dell
+  password: password
