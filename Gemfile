@@ -69,3 +69,6 @@ end
 gem "pg", "~> 1.5"
 
 gem "devise"
+
+gem "jquery-rails"
+gem "sass-rails"
