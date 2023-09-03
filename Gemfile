@@ -14,7 +14,7 @@ gem 'pg', '~> 1.5'
 gem 'devise'
 gem 'jquery-rails'
 gem 'sass-rails'
-#gem 'activeadmin'
+gem 'activeadmin'
 gem 'cancancan'
 
 group :development, :test do

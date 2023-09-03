@@ -1,0 +1,17 @@
+<h1>Here you can make an appointment</h1>
+
+<%= form_with model: @appointment do |f| %>
+  <div class="form-group mb-3 w-50">
+    <%= f.label :doctor, class: "form-label" %>
+    <%= f.text_area :doctor_name, hide_label: true, placeholder: 'Enter a name of the doctor' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :schedule_time, style: 'display: block' %>
+    <%= f.datetime_field :schedule_time, style: 'display: block' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit 'Book an appointment', class: 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  get 'profile/index'
   devise_for :users
-  root to: "home#index"
 
-  get 'about', to: 'home#about'
-  get 'contacts', to: 'home#contacts'
+  resources :appointments, only: [:new, :create, :show, :edit, :update]
+
+  root to: 'profile#index'
 end

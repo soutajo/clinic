@@ -6,9 +6,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :confirmable, 
        :recoverable, :rememberable, :trackable, :validatable
 
-  enum role: {
+  enum :role, {
     patient: 0, doctor: 1, admin: 2
   }
-
-  has_one :profile
 end
