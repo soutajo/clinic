@@ -1,9 +1,7 @@
 class Doctor < User
   has_many :appointments, dependent: :destroy
   has_many :patients, through: :appointments
-  belongs_to :category, optional: false
-
-  has_one_attached :avatar
+  belongs_to :doctor_category, optional: false
 
   before_create :assign_role
 
